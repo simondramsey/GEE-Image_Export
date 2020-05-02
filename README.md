@@ -4,11 +4,11 @@
 
 This script for Google Earth Engine can be used to produce cloud-free and atmospherically corrected satellite 
 imagery for Landsat 5, 7, 8 and Sentinel-2 using the median pixel compositing method. This 
-method takes the median pixel across each band for the image collection over the specified
+method takes the median pixel value across each band for the image collection over the specified
 time period. This has the benefit of aiding to remove clouds (which have a high value) and 
 shadows (which have a low value).
 
-This script also calculates indices commonly used for vegetation and urban studies.
+This script also calculates indices commonly used for vegetation and urban studies:
 * NDVI
 * EVI
 * MSAVI
@@ -18,8 +18,7 @@ This script also calculates indices commonly used for vegetation and urban studi
 * NDBI
 
 ### NOTES
-Exported imagery will not appear as displayed within the Google Earth Engine environment. Display settings will 
-need to be set when opened in external software e.g. QGIS.
+Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS.
  
 The Scan Line Corrector (SLC) on board Landsat 7 failed on May 31, 2003. Landsat 7 imagery
 after this data may contain data gaps and striping.
@@ -29,6 +28,7 @@ satellite platform. For Sentinel-2, top-of-atmosphere imagery has been available
 than surface reflectance.
 
 ## INPUTS
+The user will need to:
 1. Select a satellite platform
 2. Select atmospheric correction
 3. Select a start and end date for compositing
@@ -50,9 +50,6 @@ Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and
 
 Select whether to use atmospherically corrected surface reflectance imagery.
 If left blank top-of-atmosphere reflectance will be selected.
-More information on both forms of imagery is available in the link below.
-https://developers.google.com/earth-engine/landsat
-Enter 'SR' or 'sr' to select surface reflectance.
 
 Note: Sentinel-2 surface reflectance data is available from 2017-03-28 onwards.
 Sentinel-2 top-of-atmosphere data is available from 2015-06-23 onwards.
