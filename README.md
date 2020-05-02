@@ -1,12 +1,21 @@
-# GLOBAL SATELLITE IMAGE COMPOSOSITING AND INDEX CALCULATIONS
+# GLOBAL IMAGE COMPOSOSITING AND INDEX CALCULATIONS
 
 ## DESCRIPTION
 
-This script can be used to produce cloud-free and atmospherically corrected satellite 
+This script for Google Earth Engine can be used to produce cloud-free and atmospherically corrected satellite 
 imagery for Landsat 5, 7, 8 and Sentinel-2 using the median pixel compositing method. This 
 method takes the median pixel across each band for the image collection over the specified
 time period. This has the benefit of aiding to remove clouds (which have a high value) and 
 shadows (which have a low value).
+
+This script also calculates indices commonly used for vegetation and urban studies.
+* NDVI
+* EVI
+* MSAVI
+* NDWI
+* NDSI
+* UI
+* NDBI
 
 ### NOTES
 Exported imagery will not appear as displayed within the Google Earth Engine environment. Display settings will 
@@ -33,9 +42,9 @@ than surface reflectance.
  launched: | 1984-01-01 | 1999-01-01 | 2013-04-11 | 2015-06-23 | 2017-03-28
  returned: | 2012-05-05 | active | active |  active | active
  repetition: | 16 days | 16 days | 16 days |  10 days | 10 days
- resolution: | 30 meters | 30 metres | 30 metres |  10* metres | 10* metres
+ resolution: | 30 meters | 30 metres | 30 metres |  10 metres | 10 metres
 
-* 10 metres for VIS spectrum, 20m for red-edge and short wave infrared bands
+Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and 20m for red-edge and short wave infrared bands
 
 ### SET ATMOSPHERIC CORRECTION
 
