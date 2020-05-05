@@ -32,10 +32,13 @@ than surface reflectance.
 New users will need to create an account (https://earthengine.google.com/new_signup/)
 
 #### Earth engine interface
+![GEE Interface](Workspace.PNG)
 
 #### Create geometry
+![Create Geometry](geometry.png)
 
 #### Import geometry
+![Import Geometry](Assets.png)
 
 ### PROCEDURE
 The user will need to set the following variables within the script:
@@ -55,6 +58,8 @@ The user will need to set the following variables within the script:
 
 Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and 20m for red-edge and short wave infrared bands
 
+![Satellite platforms](SatellitePlatform.PNG)
+
 #### SET ATMOSPHERIC CORRECTION
 
 Select whether to use atmospherically corrected surface reflectance imagery.
@@ -63,13 +68,29 @@ If left blank top-of-atmosphere reflectance will be selected.
 Note: Sentinel-2 surface reflectance data is available from 2017-03-28 onwards.
 Sentinel-2 top-of-atmosphere data is available from 2015-06-23 onwards.
 
+![Atmospheric Correction](AtmosphericCorrection.PNG)
+
 #### SET TIME FRAME
 
 Set start and end dates for the composite. Seasonal or annual time frames are recommended.
 Select a time frame appropriate for the satellite platform chosen. Shorter time frames
 will contain more cloud cover depending on season and may contain data gaps.
 
+![Time Frame](TimeFrame.PNG)
+
 #### SET STUDY AREA
 
 Define a study area using a polygon or uploaded geometry.
 Polygons can be created using the geometry tools in the top-left of the map window
+
+#### RESULTS
+![Console](Console.PNG)
+
+![Region of interest](ROI.png)
+
+![Composite](ROI_Imagery.png)
+![NDVI](NDVI.png)
+
+#### EXPORT
+![Tasks](Tasks.PNG)
+![Export](Export.PNG)
