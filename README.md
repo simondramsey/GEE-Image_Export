@@ -68,7 +68,7 @@ If left blank top-of-atmosphere reflectance will be selected.
 Note: Sentinel-2 surface reflectance data is available from 2017-03-28 onwards.
 Sentinel-2 top-of-atmosphere data is available from 2015-06-23 onwards.
 
-![Atmospheric Correction](AtmosphericCorrection.PNG)
+![Atmospheric Correction](ATMOS.PNG)
 
 #### SET TIME FRAME
 
