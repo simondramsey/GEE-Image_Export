@@ -1,6 +1,6 @@
 # GLOBAL IMAGE COMPOSOSITING AND INDEX CALCULATIONS
 
-Script: https://code.earthengine.google.com/3847b56c92804d317499243b01e26d4c
+Script: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
 
 ### DESCRIPTION
 
