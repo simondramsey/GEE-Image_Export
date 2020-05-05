@@ -1,14 +1,15 @@
 # GLOBAL IMAGE COMPOSOSITING AND INDEX CALCULATIONS
 
-## DESCRIPTION
+Script: https://code.earthengine.google.com/3847b56c92804d317499243b01e26d4c
 
-This script for Google Earth Engine can be used to produce cloud-free and atmospherically corrected satellite 
-imagery for Landsat 5, 7, 8 and Sentinel-2 using the median pixel compositing method. This 
+### DESCRIPTION
+
+This script for Google Earth Engine (https://code.earthengine.google.com/) can be used to produce cloud-free and atmospherically corrected satellite imagery for Landsat 5, 7, 8 and Sentinel-2 using the median pixel compositing method. This 
 method takes the median pixel value across each band for the image collection over the specified
 time period. This has the benefit of aiding to remove clouds (which have a high value) and 
 shadows (which have a low value).
 
-This script also calculates indices commonly used for vegetation and urban studies:
+This script also calculates indices commonly used in vegetation and urban studies:
 * NDVI
 * EVI
 * MSAVI
@@ -17,7 +18,7 @@ This script also calculates indices commonly used for vegetation and urban studi
 * UI
 * NDBI
 
-### NOTES
+#### NOTES
 Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS.
  
 The Scan Line Corrector (SLC) on board Landsat 7 failed on May 31, 2003. Landsat 7 imagery
@@ -27,15 +28,23 @@ If no imagery is produced, check that the selected dates are within the lifespan
 satellite platform. For Sentinel-2, top-of-atmosphere imagery has been available longer 
 than surface reflectance.
 
-## INPUTS
-The user will need to:
+### GETTING STARTED WITH GOOGLE EARTH ENGINE
+New users will need to create an account (https://earthengine.google.com/new_signup/)
+
+#### Earth engine interface
+
+#### Create geometry
+
+#### Import geometry
+
+### PROCEDURE
+The user will need to set the following variables within the script:
 1. Select a satellite platform
 2. Select atmospheric correction
 3. Select a start and end date for compositing
-4. Define an area of interest using a polygon
-5. Click "Run"
+4. Select the polygon defining the study area boundary
 
-### SATELLITE PLATFORMS
+#### SATELLITE PLATFORMS
 
  PLATFORMS | Landsat 5 | Landsat 7 |  Landsat 8   |  Sentinel-2A | Sentinel-2B                             
 -----------|-----------|-----------|--------------|--------------|------------
@@ -46,7 +55,7 @@ The user will need to:
 
 Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and 20m for red-edge and short wave infrared bands
 
-### SET ATMOSPHERIC CORRECTION
+#### SET ATMOSPHERIC CORRECTION
 
 Select whether to use atmospherically corrected surface reflectance imagery.
 If left blank top-of-atmosphere reflectance will be selected.
@@ -54,16 +63,13 @@ If left blank top-of-atmosphere reflectance will be selected.
 Note: Sentinel-2 surface reflectance data is available from 2017-03-28 onwards.
 Sentinel-2 top-of-atmosphere data is available from 2015-06-23 onwards.
 
-### SET TIME FRAME
+#### SET TIME FRAME
 
 Set start and end dates for the composite. Seasonal or annual time frames are recommended.
 Select a time frame appropriate for the satellite platform chosen. Shorter time frames
 will contain more cloud cover depending on season and may contain data gaps.
 
-### SET STUDY AREA
+#### SET STUDY AREA
 
-Define a study area using a polygon.
+Define a study area using a polygon or uploaded geometry.
 Polygons can be created using the geometry tools in the top-left of the map window
-The polygon can be renamed (default is geometry). Doing so will require 
-that the variable in brackets below is changed accordingly.
-Otherwise the values below do not need to be modified.
