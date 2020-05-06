@@ -1,5 +1,6 @@
 # GLOBAL IMAGE COMPOSOSITING AND INDEX CALCULATIONS
-
+Author: Simon Ramsey
+Contact: simon.ramsey@unimelb.edu.au
 Script: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
 
 ### DESCRIPTION
@@ -122,14 +123,28 @@ Information about the selected inputs will be displayed in the console, includin
 
 ![Console](Console.PNG)
 
-After running the script, a layers menu will appear in the top right of the interactive map window. By default, a true-colour image is displayed.
+After running the script, a layers menu will appear in the top right of the interactive map window, which can be expanded by moving the mouse over it. By default, a true-colour image is displayed.
 
-![Composite](ROI_Imagery.png)
+![Composite](layers.png)
 
 Other band combinations and spectral indices can be displayed using the tickboxes and their transparency can be adjusted using the sliders. The first object on the list will be displayed on top of the objects below it.
 
 ![NDVI](NDVI.png)
 
 #### EXPORT
+To export imagery, click the highlighted tasks tab in the right panel.
 ![Tasks](Tasks.PNG)
+
+Click an image file and select RUN to export.
+
+The file parameters can be set in the panel that opens. Images can be exported directly to the associated Google Drive account. Ensure that the Scale property matches the platform that was selected.
+
+L5, L7 and L8 = 30
+S2 Composite = 10
+S2 Indices = 20
+
+The other properties define the file name and export folder.
+
 ![Export](Export.PNG)
+
+Once complete, the imagery can be downloaded from Google Drive and opened in a GIS (e.g. QGIS).
