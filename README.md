@@ -1,6 +1,9 @@
 # GLOBAL IMAGE COMPOSOSITING AND INDEX CALCULATIONS
+
 Author: Simon Ramsey
+
 Contact: simon.ramsey@unimelb.edu.au
+
 Script: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
 
 ### DESCRIPTION
