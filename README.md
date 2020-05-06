@@ -56,8 +56,8 @@ The geometry tools can be used to create point, line and polygon objects.
 #### Create geometry
 ![Create Geometry](geometry.png)
 
-Alternatively, geometry objects can be loaded using the Asset tab in the left panel.
 #### Import geometry
+Alternatively, geometry objects can be loaded using the Asset tab in the left panel.
 ![Import Geometry](Assets.png)
 
 ### PROCEDURE
