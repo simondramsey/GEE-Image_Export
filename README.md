@@ -108,14 +108,26 @@ Enter the chosen start and end date between the quoatations for the appropriate 
 Define a study area using a geometry either created within Earth Engine or uploaded as an asset.
 Polygons can be created using the geometry tools in the top-left of the interactive map window. Select the polygon tool and define the corners of the polygon by clicking on the interactive map.
 To use a pre-defined geometry, upload it as an asset. 
-Ensure the name of the study area variable matches the name of the geometry.
+Ensure the name of the area variable matches the name of the geometry.
 
-#### RESULTS
-![Console](Console.PNG)
+![Geometry](Boundary.PNG)
 
 ![Region of interest](ROI.png)
 
+
+Once these four variables are set, click RUN in the top right of the scripting panel, or click Ctrl+Enter on the keyboard.
+
+#### RESULTS
+Information about the selected inputs will be displayed in the console, including the satellite platform and start and end dates for the composite imagery.
+
+![Console](Console.PNG)
+
+After running the script, a layers menu will appear in the top right of the interactive map window. By default, a true-colour image is displayed.
+
 ![Composite](ROI_Imagery.png)
+
+Other band combinations and spectral indices can be displayed using the tickboxes and their transparency can be adjusted using the sliders. The first object on the list will be displayed on top of the objects below it.
+
 ![NDVI](NDVI.png)
 
 #### EXPORT
