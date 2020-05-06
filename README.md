@@ -98,7 +98,7 @@ Sentinel-2 top-of-atmosphere data is available from 2015-06-23 onwards.
 Entering SR between the quotations uses surface reflectance imagery, if left blank top-of-atmosphere is used.
 ![Atmospheric Correction](ATMOS.PNG)
 
-#### SET TIME FRAME
+#### 3. SET TIME FRAME
 
 Set start and end dates for the composite. Seasonal or annual time frames are recommended.
 Select a time frame appropriate for the satellite platform chosen. Shorter time frames
@@ -107,7 +107,7 @@ will contain more cloud cover depending on season and may contain data gaps.
 Enter the chosen start and end date between the quoatations for the appropriate variables in the format "YYYY-MM-DD".
 ![Time Frame](TimeFrame.PNG)
 
-#### SET STUDY AREA
+#### 4. SET STUDY AREA
 
 Define a study area using a geometry either created within Earth Engine or uploaded as an asset.
 Polygons can be created using the geometry tools in the top-left of the interactive map window. Select the polygon tool and define the corners of the polygon by clicking on the interactive map.
@@ -140,11 +140,11 @@ To export imagery, click the highlighted tasks tab in the right panel.
 
 Click an image file and select RUN to export.
 
-The file parameters can be set in the panel that opens. Images can be exported directly to the associated Google Drive account. Ensure that the Scale property matches the platform that was selected.
+The file parameters can be set in the panel that opens. Images can be exported directly to the associated Google Drive account. Ensure that the Scale property matches the platform that was selected:
 
-L5, L7 and L8 = 30
-S2 Composite = 10
-S2 Indices = 20
+* L5, L7 and L8 = 30
+* S2 Composite = 10
+* S2 Indices = 20
 
 The other properties define the file name and export folder.
 
