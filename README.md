@@ -6,6 +6,8 @@ Contact: simon.ramsey@unimelb.edu.au
 
 Script: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
 
+The first section describes the script workflow. More information about the imagery is available at the bottom of the script.
+
 ### DESCRIPTION
 
 This script for Google Earth Engine (https://code.earthengine.google.com/) can be used to produce cloud-free and atmospherically corrected satellite imagery for Landsat 5, 7, 8 and Sentinel-2 using the median pixel compositing method. This 
@@ -151,3 +153,104 @@ The other properties define the file name and export folder.
 ![Export](Export.PNG)
 
 Once complete, the imagery can be downloaded from Google Drive and opened in a GIS (e.g. QGIS).
+
+### IMAGERY
+
+#### TRUE COLOUR IMAGE
+
+Composite true colour image where the median pixel values are selected across selected time period.
+
+#### GREENEST PIXEL COMPOSITE
+
+Composite true colour image at maximum NDVI across the time period. Water and impermeable surfaces may appear cloudy as 
+cloud cover may have a higher NDVI value than these surfaces.
+
+#### INFRA (VEGETATION FALSE COLOUR COMPOSITE)
+
+R: NIR, G: RED, B: GREEN
+
+Vegetation appears vibrant red. Hardwood trees often appear lighter than Conifers.
+Soils vary from dark to light browns and urban areas can appear cyan blue, grey and yellow.
+Grasslands appear yellow. Other vegetation appears as less vibrant shades of green.
+
+#### AGRICULTURE FALSE COLOUR 
+
+R: SWIR1, G: NIR, B: BlUE
+
+Crops appear bright green. Bare earth appears magenta. Grasslands appear yellow.
+Other vegetation appears as less vibrant shades of green.
+
+#### URBAN FALSE COLOUR COMPOSITE
+
+R: SWIR2, G: SWIR1, B: NIR
+
+Vegetation appears green. Urbanized areas are represented by white, gray, or purple.
+Soils, sand, and minerals are shown in a variety of colors.
+Snow and ice appear as dark blue, and water as black or blue.
+
+### SPECTRAL INDICES
+
+#### NORMALISED DIFFERENCE VEGETATION INDEX
+
+(nir - red) / (nir + red)
+
+The value range of an NDVI is -1 to 1.                       
+Negative values of NDVI (values approaching -1) correspond to water.           
+Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow.
+Low, positive values represent shrub and grassland (approximately 0.2 to 0.4),                 
+while high values indicate temperate and tropical rainforests (values approaching 1).          
+
+####  ENHANCED VEGETATION INDEX
+
+(nir - red) / (nir + 6 * red - 7.5 * blue + 1)
+
+Seeks to address the limitation of NDVI which can oversaturate in high biomass areas.
+The range of values for the EVI is -1 to 1.                
+Healthy vegetation generally falls between values of 0.20 to 0.80. 
+
+#### MODIFIED SOIL-ADJUSTED VEGETATION INDEX 2
+
+(2 * nir + 1 - sqrt(pow((2 * nir + 1), 2) - 8 * (nir - red)) ) / 2
+
+Seeks to address the limitation of NDVI when applied to areas with a high          
+degree of exposed soil. Unlike other soil-adjusted vegetation indices,             
+MSAVI2 removes the need to explicitly specify the soil brightness correction factor.   
+MSAVI2 represents vegetation greenness with values ranging from -1 to +1.              
+
+#### NORMALISED DIFFERENCE WATER INDEX
+
+(nir - swir1) / (nir + swir1)
+
+Values of water bodies are larger than 0.5. 
+Vegetation has much smaller values         
+Built-up features have positive values between zero and 0.2.
+
+#### NORMALISED DIFFERENCE SNOW INDEX
+
+(green - swir1) / (green + swir1)
+
+Snow is highly reflective in the visible part of the EM spectrum 
+and highly absorptive in the near-infrared or short-wave infrared part of the spectrum, 
+whereas the reflectance of most clouds remains high in those same parts of the spectrum.
+Values range from -1 to 1 with large positive values indicating snow or cloud cover.   
+
+#### URBAN INDEX
+
+(swir2 - nir) / (swir2 + nir)
+
+Build-up areas and bare soil reflects more SWIR than NIR.                                     
+Higher values generally represent the impervious surfaces found in build-up areas.            
+Negative value of UI represent water bodies.                                                  
+UI value for vegetation is low.                                                               
+
+
+#### NORMALISED DIFFERENCE BUILT-UP INDEX
+
+(swir1 - nir) / (swir1 + nir)
+
+Build-up areas and bare soil reflects more SWIR than NIR.        
+Higher values generally represent the impervious surfaces found in build-up areas.
+Negative value of NDBI represent water bodies.   
+NDBI value for vegetation is low.                
+
+
