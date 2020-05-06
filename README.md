@@ -162,29 +162,28 @@ Composite true colour image where the median pixel values are selected across se
 
 #### GREENEST PIXEL COMPOSITE
 
-Composite true colour image at maximum NDVI across the time period. Water and impermeable surfaces may appear cloudy as 
-cloud cover may have a higher NDVI value than these surfaces.
+Composite true colour image at maximum photosynthetic activity (NDVI) across the time period. Water and impermeable surfaces may appear cloudy as cloud cover may have a higher NDVI value than these surfaces.
 
-#### INFRA (VEGETATION FALSE COLOUR COMPOSITE)
+#### INFRA (VEGETATION FALSE COLOUR)
 
 R: NIR, G: RED, B: GREEN
 
-Vegetation appears vibrant red. Hardwood trees often appear lighter than Conifers.
+Median pixel composite. Vegetation appears vibrant red. Hardwood trees often appear lighter than Conifers.
 Soils vary from dark to light browns and urban areas can appear cyan blue, grey and yellow.
 Grasslands appear yellow. Other vegetation appears as less vibrant shades of green.
 
-#### AGRICULTURE FALSE COLOUR 
+#### AGRICULTURE FALSE COLOUR
 
 R: SWIR1, G: NIR, B: BlUE
 
-Crops appear bright green. Bare earth appears magenta. Grasslands appear yellow.
+Median pixel composite. Crops appear bright green. Bare earth appears magenta. Grasslands appear yellow.
 Other vegetation appears as less vibrant shades of green.
 
-#### URBAN FALSE COLOUR COMPOSITE
+#### URBAN FALSE COLOUR
 
 R: SWIR2, G: SWIR1, B: NIR
 
-Vegetation appears green. Urbanized areas are represented by white, gray, or purple.
+Median pixel composite. Vegetation appears green. Urbanized areas are represented by white, gray, or purple.
 Soils, sand, and minerals are shown in a variety of colors.
 Snow and ice appear as dark blue, and water as black or blue.
 
