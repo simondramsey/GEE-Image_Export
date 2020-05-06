@@ -190,7 +190,7 @@ Snow and ice appear as dark blue, and water as black or blue.
 
 ### SPECTRAL INDICES
 
-#### NORMALISED DIFFERENCE VEGETATION INDEX
+#### NDVI - NORMALISED DIFFERENCE VEGETATION INDEX
 
 (nir - red) / (nir + red)
 
@@ -200,7 +200,7 @@ Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock,
 Low, positive values represent shrub and grassland (approximately 0.2 to 0.4),                 
 while high values indicate temperate and tropical rainforests (values approaching 1).          
 
-####  ENHANCED VEGETATION INDEX
+####  EVI - ENHANCED VEGETATION INDEX
 
 (nir - red) / (nir + 6 * red - 7.5 * blue + 1)
 
@@ -208,7 +208,7 @@ Seeks to address the limitation of NDVI which can oversaturate in high biomass a
 The range of values for the EVI is -1 to 1.                
 Healthy vegetation generally falls between values of 0.20 to 0.80. 
 
-#### MODIFIED SOIL-ADJUSTED VEGETATION INDEX 2
+#### MSAVI - MODIFIED SOIL-ADJUSTED VEGETATION INDEX 2
 
 (2 * nir + 1 - sqrt(pow((2 * nir + 1), 2) - 8 * (nir - red)) ) / 2
 
@@ -217,7 +217,7 @@ degree of exposed soil. Unlike other soil-adjusted vegetation indices,
 MSAVI2 removes the need to explicitly specify the soil brightness correction factor.   
 MSAVI2 represents vegetation greenness with values ranging from -1 to +1.              
 
-#### NORMALISED DIFFERENCE WATER INDEX
+#### NDWI - NORMALISED DIFFERENCE WATER INDEX
 
 (nir - swir1) / (nir + swir1)
 
@@ -225,7 +225,7 @@ Values of water bodies are larger than 0.5.
 Vegetation has much smaller values         
 Built-up features have positive values between zero and 0.2.
 
-#### NORMALISED DIFFERENCE SNOW INDEX
+#### NDSI - NORMALISED DIFFERENCE SNOW INDEX
 
 (green - swir1) / (green + swir1)
 
@@ -234,7 +234,7 @@ and highly absorptive in the near-infrared or short-wave infrared part of the sp
 whereas the reflectance of most clouds remains high in those same parts of the spectrum.
 Values range from -1 to 1 with large positive values indicating snow or cloud cover.   
 
-#### URBAN INDEX
+#### UI - URBAN INDEX
 
 (swir2 - nir) / (swir2 + nir)
 
@@ -244,7 +244,7 @@ Negative value of UI represent water bodies.
 UI value for vegetation is low.                                                               
 
 
-#### NORMALISED DIFFERENCE BUILT-UP INDEX
+#### NDBI - NORMALISED DIFFERENCE BUILT-UP INDEX
 
 (swir1 - nir) / (swir1 + nir)
 
