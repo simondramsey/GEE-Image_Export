@@ -15,6 +15,8 @@ method takes the median pixel value across each band for the image collection ov
 time period. This has the benefit of aiding to remove clouds (which have a high value) and 
 shadows (which have a low value).
 
+The script can be accessed here: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
+
 This script also calculates indices commonly used in vegetation and urban studies:
 * NDVI
 * EVI
