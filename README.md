@@ -6,7 +6,7 @@ Contact: simon.ramsey@unimelb.edu.au
 
 Script: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
 
-The first section describes the script workflow. More information about the imagery is available at the bottom of the script.
+Acknowledgements: Development of these scripts were funded and supported by Dr Suzanne Mavoa (NHMRC Early Career Fellowship #1121035).
 
 ### DESCRIPTION
 
