@@ -26,6 +26,8 @@ This script also calculates indices commonly used in vegetation and urban studie
 * UI
 * NDBI
 
+More information about each of these indices is available at the end of this document.
+
 #### NOTES
 Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS.
  
