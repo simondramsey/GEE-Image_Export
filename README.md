@@ -200,8 +200,7 @@ Snow and ice appear as dark blue, and water as black or blue.
 The value range of an NDVI is -1 to 1.                       
 Negative values of NDVI (values approaching -1) correspond to water.           
 Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow.
-Low, positive values represent shrub and grassland (approximately 0.2 to 0.4),                 
-while high values indicate temperate and tropical rainforests (values approaching 1).          
+Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).          
 
 ####  EVI - ENHANCED VEGETATION INDEX
 
@@ -216,8 +215,7 @@ Healthy vegetation generally falls between values of 0.20 to 0.80.
 (2 * nir + 1 - sqrt(pow((2 * nir + 1), 2) - 8 * (nir - red)) ) / 2
 
 Seeks to address the limitation of NDVI when applied to areas with a high          
-degree of exposed soil. Unlike other soil-adjusted vegetation indices,             
-MSAVI2 removes the need to explicitly specify the soil brightness correction factor.   
+degree of exposed soil. Unlike other soil-adjusted vegetation indices, MSAVI2 removes the need to explicitly specify the soil brightness correction factor.
 MSAVI2 represents vegetation greenness with values ranging from -1 to +1.              
 
 #### NDWI - NORMALISED DIFFERENCE WATER INDEX
@@ -254,6 +252,4 @@ UI value for vegetation is low.
 Build-up areas and bare soil reflects more SWIR than NIR.        
 Higher values generally represent the impervious surfaces found in build-up areas.
 Negative value of NDBI represent water bodies.   
-NDBI value for vegetation is low.                
-
-
+NDBI value for vegetation is low.
