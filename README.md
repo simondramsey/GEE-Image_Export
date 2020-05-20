@@ -214,8 +214,7 @@ Healthy vegetation generally falls between values of 0.20 to 0.80.
 
 (2 * nir + 1 - sqrt(pow((2 * nir + 1), 2) - 8 * (nir - red)) ) / 2
 
-Seeks to address the limitation of NDVI when applied to areas with a high          
-degree of exposed soil. Unlike other soil-adjusted vegetation indices, MSAVI2 removes the need to explicitly specify the soil brightness correction factor.
+Seeks to address the limitation of NDVI when applied to areas with a high degree of exposed soil. Unlike other soil-adjusted vegetation indices, MSAVI2 removes the need to explicitly specify the soil brightness correction factor.
 MSAVI2 represents vegetation greenness with values ranging from -1 to +1.              
 
 #### NDWI - NORMALISED DIFFERENCE WATER INDEX
