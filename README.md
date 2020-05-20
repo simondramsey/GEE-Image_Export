@@ -80,9 +80,9 @@ The user will need to set the following variables within the script:
  launched: | 1984-01-01 | 1999-01-01 | 2013-04-11 | 2015-06-23 | 2017-03-28
  returned: | 2012-05-05 | active | active |  active | active
  repetition: | 16 days | 16 days | 16 days |  10 days | 10 days
- resolution: | 30 meters | 30 metres | 30 metres |  10 metres | 10 metres
+ resolution: | 15-30 meters | 15-30 metres | 15-30 metres |  10-20 metres | 10-20 metres
 
-Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and 20m for red-edge and short wave infrared bands
+Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and 20m for red-edge and short wave infrared bands. Landsat thermal infrared bands are collected at a coarser spatial resolution and resampled to 30 m.
 
 The platforms names have been shortened in the script to a letter and number combination e.g. L8 for Landsat-8. 
 Enter either L5, L7, L8 or S2 as the value for the variable between the quotations to set a satellite platform. If left blank, the script defaults to Sentinel-2
