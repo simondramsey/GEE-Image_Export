@@ -4,7 +4,7 @@ Author: Simon Ramsey
 
 Contact: simon.ramsey@unimelb.edu.au
 
-Script: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
+Script: https://code.earthengine.google.com/070d3980828098d9de48f3fc9965502c
 
 Acknowledgements: Development of these scripts were funded and supported by Dr Suzanne Mavoa (NHMRC Early Career Fellowship #1121035).
 
@@ -29,7 +29,7 @@ This script also calculates indices commonly used in vegetation and urban studie
 More information about each of these indices is available at the end of this document.
 
 #### NOTES
-Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS.
+Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS. When displaying multi-band imagery, such as a true colour composite, ensure that the correct bands representing the red, green and blue channels are displayed. For example, for Landsat 8, Red = Band 4, Green = Band 3, Blue = Band 2.
  
 The Scan Line Corrector (SLC) on board Landsat 7 failed on May 31, 2003. Landsat 7 imagery
 after this data may contain data gaps and striping.
