@@ -4,7 +4,7 @@ Author: Simon Ramsey
 
 Contact: simon.ramsey@unimelb.edu.au
 
-Script: https://code.earthengine.google.com/070d3980828098d9de48f3fc9965502c
+Script: https://code.earthengine.google.com/42772c25e97f9e58a259dfe9e5a62012?noload=true
 
 Acknowledgements: Development of these scripts were funded and supported by Dr Suzanne Mavoa (NHMRC Early Career Fellowship #1121035).
 
@@ -15,7 +15,7 @@ method takes the median pixel value across each band for the image collection ov
 time period. This has the benefit of aiding to remove clouds (which have a high value) and 
 shadows (which have a low value).
 
-The script can be accessed here: https://code.earthengine.google.com/0728ca635abb9c9e224fb1705cc3beac
+The script can be accessed here: https://code.earthengine.google.com/42772c25e97f9e58a259dfe9e5a62012?noload=true
 
 This script also calculates indices commonly used in vegetation and urban studies:
 * NDVI
