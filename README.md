@@ -146,11 +146,7 @@ To export imagery, click the highlighted tasks tab in the right panel.
 
 Click an image file and select RUN to export.
 
-The file parameters can be set in the panel that opens. Images can be exported directly to the associated Google Drive account. Ensure that the Scale property matches the platform that was selected:
-
-* L5, L7 and L8 = 30
-* S2 Composite = 10
-* S2 Indices = 20
+The file parameters can be set in the panel that opens. Images can be exported directly to the associated Google Drive account.
 
 The other properties define the file name and export folder.
 
