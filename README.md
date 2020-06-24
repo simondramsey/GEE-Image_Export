@@ -4,7 +4,7 @@ Author: Simon Ramsey
 
 Contact: simon.ramsey@unimelb.edu.au
 
-Script: https://code.earthengine.google.com/42772c25e97f9e58a259dfe9e5a62012?noload=true
+Script: https://code.earthengine.google.com/47cca57ba6a06c790e8b7c5099f8114d?noload=true
 
 Acknowledgements: Development of these scripts were funded and supported by Dr Suzanne Mavoa (NHMRC Early Career Fellowship #1121035).
 
@@ -15,7 +15,7 @@ method takes the median pixel value across each band for the image collection ov
 time period. This has the benefit of aiding to remove clouds (which have a high value) and 
 shadows (which have a low value).
 
-The script can be accessed here: https://code.earthengine.google.com/42772c25e97f9e58a259dfe9e5a62012?noload=true
+The script can be accessed here: https://code.earthengine.google.com/47cca57ba6a06c790e8b7c5099f8114d?noload=true
 
 This script also calculates indices commonly used in vegetation and urban studies:
 * NDVI
@@ -26,7 +26,7 @@ This script also calculates indices commonly used in vegetation and urban studie
 * UI
 * NDBI
 
-More information about each of these indices is available at the end of this document.
+More information about each of these indices is available at the end of this document. For longitudinal studies incorporating multiple Landsat sensors, adjusted NDVI values are available using the adjustments calculated by Roy et al (https://www.sciencedirect.com/science/article/pii/S0034425715302455).
 
 #### NOTES
 Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS. When displaying multi-band imagery, such as a true colour composite, ensure that the correct bands representing the red, green and blue channels are displayed. For example, for Landsat 8, Red = Band 4, Green = Band 3, Blue = Band 2.
@@ -200,7 +200,7 @@ Snow and ice appear as dark blue, and water as black or blue.
 The value range of an NDVI is -1 to 1.                       
 Negative values of NDVI (values approaching -1) correspond to water.           
 Values close to zero (-0.1 to 0.1) generally correspond to barren areas of rock, sand, or snow.
-Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).          
+Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), while high values indicate temperate and tropical rainforests (values approaching 1).
 
 ####  EVI - ENHANCED VEGETATION INDEX
 
