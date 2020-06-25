@@ -111,6 +111,7 @@ Select a time frame appropriate for the satellite platform chosen. Shorter time 
 will contain more cloud cover depending on season and may contain data gaps.
 
 Enter the chosen start and end date between the quoatations for the appropriate variables in the format "YYYY-MM-DD".
+
 ![Time Frame](TimeFrame.PNG)
 
 #### 4. SET STUDY AREA
