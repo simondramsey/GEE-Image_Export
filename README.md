@@ -81,7 +81,7 @@ The user will need to set the following variables within the script:
  launched: | 1984-01-01 | 1999-01-01 | 2013-04-11 | 2015-06-23 | 2017-03-28
  returned: | 2012-05-05 | active | active |  active | active
  repetition: | 16 days | 16 days | 16 days |  10 days | 10 days
- resolution: | 15-30 meters | 15-30 metres | 15-30 metres |  10-20 metres | 10-20 metres
+ resolution: | 30 meters | 30 metres | 30 metres |  10-60 metres | 10-60 metres
 
 Note: Sentinel-2 band resolution is 10m for visible and near infrared bands, and 20m for red-edge and short wave infrared bands. Landsat thermal infrared bands are collected at a coarser spatial resolution and resampled to 30 m.
 
