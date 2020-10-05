@@ -55,7 +55,7 @@ The right panel contains three tabs:
 * Console - For printing output from within the script.
 * Tasks - Manages import and export
 
-#### Earth engine interface
+#### Earth Engine interface
 ![GEE Interface](Workspace.PNG)
 
 The geometry tools can be used to create point, line and polygon objects.
