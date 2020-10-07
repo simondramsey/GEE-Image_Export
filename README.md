@@ -176,7 +176,7 @@ Grasslands appear yellow. Other vegetation appears as less vibrant shades of gre
 
 #### AGRICULTURE FALSE COLOUR
 
-R: SWIR1, G: NIR, B: BlUE
+R: SWIR1, G: NIR, B: BLUE
 
 Median pixel composite. Crops appear bright green. Bare earth appears magenta. Grasslands appear yellow.
 Other vegetation appears as less vibrant shades of green.
@@ -185,7 +185,7 @@ Other vegetation appears as less vibrant shades of green.
 
 R: SWIR2, G: SWIR1, B: NIR
 
-Median pixel composite. Vegetation appears green. Urbanized areas are represented by white, gray, or purple.
+Median pixel composite. Vegetation appears green. Urbanized areas are represented by white, grey, or purple.
 Soils, sand, and minerals are shown in a variety of colors.
 Snow and ice appear as dark blue, and water as black or blue.
 
@@ -193,7 +193,7 @@ Snow and ice appear as dark blue, and water as black or blue.
 
 #### NDVI - NORMALISED DIFFERENCE VEGETATION INDEX
 
-(nir - red) / (nir + red)
+(NIR - RED) / (NIR + RED)
 
 The value range of an NDVI is -1 to 1.                       
 Negative values of NDVI (values approaching -1) correspond to water.           
@@ -202,7 +202,7 @@ Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), w
 
 ####  EVI - ENHANCED VEGETATION INDEX
 
-(2.5 * nir - red) / (nir + 6 * red - 7.5 * blue + 1)
+(2.5 * NIR - RED) / (NIR + 6 * RED - 7.5 * BLUE + 1)
 
 Seeks to address the limitation of NDVI which can oversaturate in high biomass areas.
 The range of values for the EVI is -1 to 1.                
@@ -210,14 +210,14 @@ Healthy vegetation generally falls between values of 0.20 to 0.80.
 
 #### MSAVI - MODIFIED SOIL-ADJUSTED VEGETATION INDEX 2
 
-(2 * nir + 1 - sqrt(pow((2 * nir + 1), 2) - 8 * (nir - red)) ) / 2
+(2 * NIR + 1 - sqrt(pow((2 * NIR + 1), 2) - 8 * (NIR - RED)) ) / 2
 
 Seeks to address the limitation of NDVI when applied to areas with a high degree of exposed soil. Unlike other soil-adjusted vegetation indices, MSAVI2 removes the need to explicitly specify the soil brightness correction factor.
 MSAVI2 represents vegetation greenness with values ranging from -1 to +1.              
 
 #### NDWI - NORMALISED DIFFERENCE WATER INDEX
 
-(nir - swir1) / (nir + swir1)
+(NIR - SWIR1) / (NIR + SWIR1)
 
 Values of water bodies are larger than 0.5. 
 Vegetation has much smaller values         
@@ -225,7 +225,7 @@ Built-up features have positive values between zero and 0.2.
 
 #### NDSI - NORMALISED DIFFERENCE SNOW INDEX
 
-(green - swir1) / (green + swir1)
+(GREEN - SWIR1) / (GREEN + SWIR1)
 
 Snow is highly reflective in the visible part of the EM spectrum 
 and highly absorptive in the near-infrared or short-wave infrared part of the spectrum, 
@@ -234,7 +234,7 @@ Values range from -1 to 1 with large positive values indicating snow or cloud co
 
 #### UI - URBAN INDEX
 
-(swir2 - nir) / (swir2 + nir)
+(SWIR2 - NIR) / (SWIR2 + NIR)
 
 Build-up areas and bare soil reflects more SWIR than NIR.                                     
 Higher values generally represent the impervious surfaces found in build-up areas.            
@@ -244,7 +244,7 @@ UI value for vegetation is low.
 
 #### NDBI - NORMALISED DIFFERENCE BUILT-UP INDEX
 
-(swir1 - nir) / (swir1 + nir)
+(SWIR1 - NIR) / (SWIR1 + NIR)
 
 Build-up areas and bare soil reflects more SWIR than NIR.        
 Higher values generally represent the impervious surfaces found in build-up areas.
