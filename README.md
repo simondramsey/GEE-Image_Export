@@ -202,7 +202,7 @@ Low, positive values represent shrub and grassland (approximately 0.2 to 0.4), w
 
 ####  EVI - ENHANCED VEGETATION INDEX
 
-(nir - red) / (nir + 6 * red - 7.5 * blue + 1)
+(2.5 * nir - red) / (nir + 6 * red - 7.5 * blue + 1)
 
 Seeks to address the limitation of NDVI which can oversaturate in high biomass areas.
 The range of values for the EVI is -1 to 1.                
