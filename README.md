@@ -32,7 +32,7 @@ More information about each of these indices is available at the end of this doc
 Exported single band imagery (e.g. indices) will appear greyscale when displayed in a GIS environment. Display settings can be set when opened in external software e.g. QGIS. When displaying multi-band imagery, such as a true colour composite, ensure that the correct bands representing the red, green and blue channels are displayed. For example, for Landsat 8, Red = Band 4, Green = Band 3, Blue = Band 2.
  
 The Scan Line Corrector (SLC) on board Landsat 7 failed on May 31, 2003. Landsat 7 imagery
-after this data may contain data gaps and striping.
+after this date may contain data gaps and striping.
 
 If no imagery is produced, check that the selected dates are within the lifespan of the 
 satellite platform. For Sentinel-2, top-of-atmosphere imagery has been available longer 
