@@ -4,7 +4,7 @@ Author: Simon Ramsey
 
 Contact: simon.ramsey@unimelb.edu.au
 
-Script: https://code.earthengine.google.com/15084c2db6eba1ff5be36feb26b4e9f3?noload=true
+Script: https://code.earthengine.google.com/ff2b8ced0f1dcf9d52c67cfbf14282cd?noload=true
 
 Acknowledgements: Development of these scripts were funded and supported by Dr Suzanne Mavoa (NHMRC Early Career Fellowship #1121035).
 
